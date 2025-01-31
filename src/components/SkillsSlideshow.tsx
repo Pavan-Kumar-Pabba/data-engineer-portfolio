@@ -1,6 +1,4 @@
-import { useState, useEffect } from 'react';
 import { Card } from "@/components/ui/card";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const skillCategories = [
   {
@@ -36,78 +34,26 @@ const skillCategories = [
 ];
 
 const SkillsSlideshow = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % skillCategories.length);
-    }, 5000);
-
-    return () => clearInterval(timer);
-  }, []);
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % skillCategories.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + skillCategories.length) % skillCategories.length);
-  };
-
   return (
-    <div className="relative w-full max-w-4xl mx-auto py-8">
-      <div className="overflow-hidden rounded-lg">
-        <div
-          className="flex transition-transform duration-500 ease-in-out"
-          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+      {skillCategories.map((category, index) => (
+        <Card
+          key={index}
+          className={`p-6 ${category.bgColor} text-white hover:shadow-lg transition-shadow`}
         >
-          {skillCategories.map((category, index) => (
-            <Card
-              key={index}
-              className={`flex-shrink-0 w-full p-8 ${category.bgColor} text-white transition-opacity duration-500 
-                ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`}
-            >
-              <h3 className="text-2xl font-bold mb-6">{category.title}</h3>
-              <div className="flex flex-wrap gap-3">
-                {category.skills.map((skill, skillIndex) => (
-                  <span
-                    key={skillIndex}
-                    className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </Card>
-          ))}
-        </div>
-      </div>
-      
-      <button
-        onClick={prevSlide}
-        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 bg-white/90 p-2 rounded-full shadow-lg hover:bg-white transition-colors"
-      >
-        <ChevronLeft className="w-6 h-6" />
-      </button>
-      
-      <button
-        onClick={nextSlide}
-        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 bg-white/90 p-2 rounded-full shadow-lg hover:bg-white transition-colors"
-      >
-        <ChevronRight className="w-6 h-6" />
-      </button>
-
-      <div className="flex justify-center mt-4 gap-2">
-        {skillCategories.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-colors ${
-              index === currentSlide ? 'bg-secondary' : 'bg-gray-300'
-            }`}
-          />
-        ))}
-      </div>
+          <h3 className="text-xl font-bold mb-4">{category.title}</h3>
+          <div className="flex flex-wrap gap-2">
+            {category.skills.map((skill, skillIndex) => (
+              <span
+                key={skillIndex}
+                className="px-2 py-1 bg-white/20 rounded-full text-sm font-medium"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </Card>
+      ))}
     </div>
   );
 };
