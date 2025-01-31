@@ -1,4 +1,4 @@
-import { Database, Server, Code } from "lucide-react";
+import { Database, Server, Code, BarChart } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -19,6 +19,10 @@ const HeroSection = () => {
         <div className="flex items-center gap-2">
           <Code className="w-6 h-6" />
           <span>ETL Pipeline</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <BarChart className="w-6 h-6" />
+          <span>Data Visualization</span>
         </div>
       </div>
     </div>

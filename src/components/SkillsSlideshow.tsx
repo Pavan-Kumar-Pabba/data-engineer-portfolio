@@ -27,6 +27,11 @@ const skillCategories = [
     title: "Advanced Capabilities",
     skills: ["Artificial Intelligence", "Generative AI", "Machine Learning", "Data Science", "LLMs", "Prompt Engineering"],
     bgColor: "bg-red-500"
+  },
+  {
+    title: "Data Visualization",
+    skills: ["Tableau", "Power BI", "Qlik Sense", "QuickSight", "Grafana", "D3.js", "Chart.js"],
+    bgColor: "bg-indigo-500"
   }
 ];
 
