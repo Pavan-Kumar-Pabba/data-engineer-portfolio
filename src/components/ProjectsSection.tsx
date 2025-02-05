@@ -4,23 +4,12 @@ import { Github } from "lucide-react";
 
 const projects = [
   {
-    title: "Data Lake Implementation",
-    image: "/placeholder.svg",
-    githubLink: "https://github.com/yourusername/project1",
-    technologies: ["Apache Spark", "AWS S3", "Python", "Airflow"],
-  },
-  {
-    title: "Real-time Analytics Pipeline",
-    image: "/placeholder.svg",
-    githubLink: "https://github.com/yourusername/project2",
-    technologies: ["Kafka", "Apache Flink", "ElasticSearch", "Kibana"],
-  },
-  {
-    title: "Data Warehouse Migration",
-    image: "/placeholder.svg",
-    githubLink: "https://github.com/yourusername/project3",
-    technologies: ["Snowflake", "dbt", "Python", "AWS Glue"],
-  },
+    title: "Caravan Insurance Policy Prediction",
+    description: "Developed a machine learning model to predict caravan insurance policy purchases using various algorithms including Random Forest, Decision Trees, Logistic Regression, XGBoost, SVM, and KNN. Implemented hyperparameter tuning to optimize model performance.",
+    image: "https://images.unsplash.com/photo-1472396961693-142e6e269027",
+    githubLink: "https://github.com/yourusername/caravan-insurance",
+    technologies: ["Python", "Jupyter Notebook", "Machine Learning", "Random Forest", "Decision Trees", "Logistic Regression", "XGBoost", "SVM", "KNN"],
+  }
 ];
 
 const ProjectsSection = () => {
@@ -31,15 +20,14 @@ const ProjectsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-              <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover hover:opacity-80 transition-opacity"
-                />
-              </a>
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-48 object-cover hover:opacity-80 transition-opacity"
+              />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-4">{project.title}</h3>
+                <p className="text-gray-700 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, techIndex) => (
                     <span

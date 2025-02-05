@@ -14,8 +14,16 @@ const skillCategories = [
     skills: "Tableau, Power BI, Matplotlib, Seaborn, ggplot2, Snowsight, Looker Studio"
   },
   {
-    title: "Cloud Services",
-    skills: "AWS S3, Glue, Redshift, Dynamo DB, IAM, EC2, Lambda, Kinesis, EMR, EKS, Athena, Data Pipeline, SQS, SNS, Cloud Watch, Azure Data Lake, Blob Storage, Synapse Analytics, Databricks, Azure Data Factory, Power BI, GCP"
+    title: "AWS Services",
+    skills: "EC2, S3, RDS, Lambda, Redshift, Glue, Athena, EMR, DynamoDB, Kinesis, SNS, SQS, IAM, VPC, CloudFormation, CloudWatch, Route 53, EKS, ECS, Step Functions, API Gateway, CloudTrail, Secrets Manager, KMS, CodePipeline, CodeBuild, CodeDeploy, SageMaker, QuickSight"
+  },
+  {
+    title: "Azure Services",
+    skills: "Blob Storage, SQL Database, Databricks, Synapse Analytics, Data Factory, Event Hubs, Active Directory, Virtual Network, Kubernetes Service, Cosmos DB, Power BI, API Management, Monitor, DevOps"
+  },
+  {
+    title: "Google Cloud Platform",
+    skills: "Cloud Storage, BigQuery, Dataflow, Pub/Sub, IAM, VPC, Kubernetes Engine, Cloud SQL, Bigtable, Cloud Logging, Cloud Monitoring, Dataproc, Vertex AI"
   },
   {
     title: "Tools and Frameworks",

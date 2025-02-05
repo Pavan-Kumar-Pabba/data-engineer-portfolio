@@ -3,19 +3,24 @@ import { Card } from "@/components/ui/card";
 
 const certifications = [
   {
-    name: "AWS Certified Data Analytics - Specialty",
+    name: "AWS Certified Solutions Architect Associate",
     issuer: "Amazon Web Services",
-    year: "2023",
+    year: "2021",
   },
   {
-    name: "Azure Data Engineer Associate",
-    issuer: "Microsoft",
-    year: "2022",
+    name: "AWS Data Engineer",
+    issuer: "Amazon Web Services",
+    year: "2021",
   },
   {
-    name: "Databricks Certified Associate Developer",
+    name: "Databricks Certified Data Engineer",
     issuer: "Databricks",
     year: "2022",
+  },
+  {
+    name: "Tableau Desktop Associate",
+    issuer: "Tableau",
+    year: "2020",
   },
 ];
 
