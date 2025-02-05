@@ -64,8 +64,8 @@ const Navigation = () => {
           </button>
         </div>
         <Avatar className="w-10 h-10">
-          <AvatarImage src="/placeholder.svg" alt="Profile" />
-          <AvatarFallback>DE</AvatarFallback>
+          <AvatarImage src="/lovable-uploads/503e9d73-b3e1-42b7-b20b-afb16b1c1f0b.png" alt="Profile" />
+          <AvatarFallback>PP</AvatarFallback>
         </Avatar>
       </div>
     </nav>

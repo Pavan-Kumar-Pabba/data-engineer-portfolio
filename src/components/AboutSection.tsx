@@ -35,7 +35,7 @@ const AboutSection = () => {
             </div>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-4" id="contact">
             <h3 className="text-xl font-semibold text-primary">Contact</h3>
             <div className="space-y-2">
               <p className="flex items-center gap-2">
@@ -63,7 +63,7 @@ const AboutSection = () => {
 
         <div className="flex justify-center">
           <Avatar className="w-64 h-64">
-            <AvatarImage src="/placeholder.svg" alt="Profile Photo" />
+            <AvatarImage src="/lovable-uploads/07f34fb6-f5c1-479d-8b42-70f0a305b899.png" alt="Profile Photo" className="object-cover" />
             <AvatarFallback>PP</AvatarFallback>
           </Avatar>
         </div>
