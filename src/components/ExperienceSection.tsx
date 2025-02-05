@@ -3,22 +3,25 @@ import { Card } from "@/components/ui/card";
 
 const experiences = [
   {
-    title: "Senior Data Engineer",
-    company: "Tech Corp",
-    period: "2022 - Present",
-    description: "Leading data pipeline development and optimization for large-scale data processing",
+    title: "Data Science Teaching Assistant",
+    company: "University of South Florida",
+    location: "Tampa, United States",
+    period: "Aug 2024 - Present",
+    description: "Leading data science instruction for 350+ students, focusing on preprocessing, model evaluation, and statistical analysis. Developed a RAG-based AI chatbot using LLMs and Azure OpenAI, achieving 87.83% query reliability improvement. Enhanced student performance in statistical techniques, resulting in 31% grade improvement.",
   },
   {
-    title: "Data Engineer",
-    company: "Data Solutions Inc",
-    period: "2020 - 2022",
-    description: "Developed and maintained ETL processes and data warehousing solutions",
+    title: "Data Analytics Engineer",
+    company: "Tata Consultancy Services",
+    location: "Hyderabad, India",
+    period: "Jul 2021 - Aug 2023",
+    description: "Architected big data solutions on AWS using Airflow, Terraform, and Spark, improving processing efficiency by 33%. Developed automated ETL pipelines processing 1M+ daily records, optimizing performance by 54.71%. Implemented real-time log processing using Amazon Kinesis and designed actionable dashboards with Tableau and Power BI, enhancing reporting efficiency by 36%.",
   },
   {
-    title: "Junior Data Engineer",
-    company: "StartUp Tech",
-    period: "2019 - 2020",
-    description: "Assisted in building data pipelines and implementing data quality measures",
+    title: "Machine Learning Intern",
+    company: "Internshala Trainings",
+    location: "Visakhapatnam, India",
+    period: "Apr 2020 - Sep 2020",
+    description: "Developed ML models for Churn Prediction and Fraud Detection, achieving 15% higher precision. Implemented advanced statistical analysis and machine learning techniques, enhancing model reliability by 21%. Created and optimized ML models using Pandas, NumPy, Keras, and PyTorch, improving predictive accuracy by 14.36%.",
   },
 ];
 
@@ -36,6 +39,7 @@ const ExperienceSection = () => {
               <div>
                 <h3 className="text-xl font-semibold text-primary">{exp.title}</h3>
                 <p className="text-secondary font-medium">{exp.company}</p>
+                <p className="text-sm text-gray-600">{exp.location}</p>
                 <p className="text-sm text-gray-600 mb-2">{exp.period}</p>
                 <p className="text-gray-700">{exp.description}</p>
               </div>

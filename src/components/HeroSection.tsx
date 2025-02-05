@@ -3,9 +3,9 @@ import { Database, Server, Code, BarChart } from "lucide-react";
 const HeroSection = () => {
   return (
     <div className="min-h-[70vh] flex flex-col justify-center items-center bg-primary text-primary-foreground p-8 animate-fadeIn">
-      <h1 className="text-4xl md:text-6xl font-bold mb-6">Data Engineer Portfolio</h1>
+      <h1 className="text-4xl md:text-6xl font-bold mb-6">Pavan Kumar Pabba</h1>
       <p className="text-xl md:text-2xl mb-8 text-center max-w-2xl">
-        4+ years of experience transforming complex data challenges into efficient solutions
+        Data Engineer & Analytics Professional
       </p>
       <div className="flex flex-wrap justify-center gap-8 mt-4">
         <div className="flex items-center gap-2">
