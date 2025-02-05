@@ -28,6 +28,10 @@ const skillCategories = [
   {
     title: "Tools and Frameworks",
     skills: "Informatica, Talend, Stitch, Jira, Jupyter Notebook, SSMS, SSIS, Alation, Big Data tools, Hadoop, Apache Spark, GIT, Bitbucket, Jenkins, Ansible, SAP, Apache Airflow, Azure Data Studio, Rest APIs, Kafka, Terraform"
+  },
+  {
+    title: "Demonstrated Skills",
+    skills: "Data Mining, Advance Database Management, Machine Learning, Predictive Modelling, Cloud Platforms, Artificial Intelligence, LLMs, CICD tools, ETL tools, Big Data tools, Prompt Engineering with Langchain, Statistical Data Modelling, Business Intelligence"
   }
 ];
 

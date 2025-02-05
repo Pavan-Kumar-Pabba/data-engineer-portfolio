@@ -6,9 +6,23 @@ const projects = [
   {
     title: "Caravan Insurance Policy Prediction",
     description: "Developed a machine learning model to predict caravan insurance policy purchases using various algorithms including Random Forest, Decision Trees, Logistic Regression, XGBoost, SVM, and KNN. Implemented hyperparameter tuning to optimize model performance.",
-    image: "https://images.unsplash.com/photo-1472396961693-142e6e269027",
-    githubLink: "https://github.com/yourusername/caravan-insurance",
+    image: "/lovable-uploads/d07d8c82-bbb3-4f1e-b7c7-1c4dc8c6e3bb.png",
+    githubLink: "https://github.com/Pavan-Kumar-Pabba/Caravan-Insurance-Policy",
     technologies: ["Python", "Jupyter Notebook", "Machine Learning", "Random Forest", "Decision Trees", "Logistic Regression", "XGBoost", "SVM", "KNN"],
+  },
+  {
+    title: "United States Mass Killing Analysis",
+    description: "The project's overarching goal is to generate practical insights that can influence public policy and community-based initiatives aimed at curtailing mass killings. By pinpointing patterns and critical factors, it seeks to fuel policy discussions around gun control, mental health provisions, and public safety strategies, ultimately contributing to a safer societal environment.",
+    image: "https://images.unsplash.com/photo-1487252665478-49b61b47f302",
+    githubLink: "https://github.com/Pavan-Kumar-Pabba/United-States-Mass-Killings-Analysis",
+    technologies: ["SQL", "Tableau", "Data Analysis", "Data Visualization"],
+  },
+  {
+    title: "Mediplus Website",
+    description: "Led the design and deployment of a user-centric healthcare management system, integrating with Azure SQL Services for robust data management. Implemented comprehensive CRUD operations and adaptive event management for appointment scheduling, achieving universal responsiveness across all platforms.",
+    image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
+    githubLink: "https://github.com/Pavan-Kumar-Pabba/Mediplus-Web-Look",
+    technologies: ["HTML", "CSS", "JavaScript", "C#", ".NET", "Microsoft Azure", "CRUD", "Healthcare Management"],
   }
 ];
 
