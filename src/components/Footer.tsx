@@ -1,3 +1,4 @@
+
 import { Github, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
@@ -12,7 +13,7 @@ const Footer = () => {
           
           <div className="flex gap-6">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/Pavan-Kumar-Pabba"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-secondary transition-colors"
@@ -20,7 +21,7 @@ const Footer = () => {
               <Github className="w-6 h-6" />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/pavan-kumar-pabba/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-secondary transition-colors"
