@@ -2,6 +2,13 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
+  const scrollToContact = () => {
+    const element = document.getElementById('contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <footer className="bg-primary text-primary-foreground py-12">
       <div className="max-w-6xl mx-auto px-8">
@@ -28,12 +35,12 @@ const Footer = () => {
             >
               <Linkedin className="w-6 h-6" />
             </a>
-            <a
-              href="mailto:pavanpabba36@gmail.com"
+            <button
+              onClick={scrollToContact}
               className="hover:text-secondary transition-colors"
             >
               <Mail className="w-6 h-6" />
-            </a>
+            </button>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-primary-foreground/20 text-center text-primary-foreground/60">
