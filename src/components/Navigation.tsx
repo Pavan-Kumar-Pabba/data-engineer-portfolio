@@ -18,11 +18,8 @@ const Navigation = () => {
             onClick={() => scrollToSection('hero')}
             className="flex items-center gap-2 hover:text-secondary transition-colors"
           >
-            <img 
-              src="/lovable-uploads/e73802dc-0f23-4353-899d-679b3f19a874.png" 
-              alt="PP Logo" 
-              className="w-12 h-12 object-contain"
-            />
+            <Home className="w-4 h-4" />
+            <span>Home</span>
           </button>
           <button
             onClick={() => scrollToSection('about')}
