@@ -1,4 +1,6 @@
+
 import { Home, User, GraduationCap, Code2, Briefcase, FolderGit2, Mail } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Navigation = () => {
   const scrollToSection = (id: string) => {
