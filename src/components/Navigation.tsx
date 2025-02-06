@@ -1,3 +1,4 @@
+
 import { Home, User, GraduationCap, Code2, Briefcase, FolderGit2, Mail } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
@@ -63,8 +64,8 @@ const Navigation = () => {
             <span>Contact</span>
           </button>
         </div>
-        <Avatar className="w-10 h-10">
-          <AvatarImage src="/lovable-uploads/503e9d73-b3e1-42b7-b20b-afb16b1c1f0b.png" alt="Profile" />
+        <Avatar className="w-12 h-12">
+          <AvatarImage src="/lovable-uploads/07f34fb6-f5c1-479d-8b42-70f0a305b899.png" alt="Profile" />
           <AvatarFallback>PP</AvatarFallback>
         </Avatar>
       </div>
