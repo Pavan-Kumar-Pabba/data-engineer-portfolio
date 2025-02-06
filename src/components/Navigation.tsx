@@ -1,6 +1,4 @@
-
 import { Home, User, GraduationCap, Code2, Briefcase, FolderGit2, Mail } from "lucide-react";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Navigation = () => {
   const scrollToSection = (id: string) => {
@@ -18,8 +16,11 @@ const Navigation = () => {
             onClick={() => scrollToSection('hero')}
             className="flex items-center gap-2 hover:text-secondary transition-colors"
           >
-            <Home className="w-4 h-4" />
-            <span>Home</span>
+            <img 
+              src="/lovable-uploads/e73802dc-0f23-4353-899d-679b3f19a874.png" 
+              alt="PP Logo" 
+              className="w-12 h-12 object-contain"
+            />
           </button>
           <button
             onClick={() => scrollToSection('about')}
