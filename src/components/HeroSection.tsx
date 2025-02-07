@@ -1,11 +1,15 @@
+
 import { Database, Server, Code, BarChart } from "lucide-react";
 
 const HeroSection = () => {
   return (
     <div className="min-h-[70vh] flex flex-col justify-center items-center bg-primary text-primary-foreground p-8 animate-fadeIn">
       <h1 className="text-4xl md:text-6xl font-bold mb-6">Pavan Kumar Pabba</h1>
-      <p className="text-xl md:text-2xl mb-8 text-center max-w-2xl">
+      <p className="text-xl md:text-2xl mb-4 text-center max-w-2xl">
         Data Engineer & Analytics Professional
+      </p>
+      <p className="text-lg md:text-xl mb-8 text-center text-primary-foreground/80">
+        Decoding Complexity, Delivering Clarity
       </p>
       <div className="flex flex-wrap justify-center gap-8 mt-4">
         <div className="flex items-center gap-2">

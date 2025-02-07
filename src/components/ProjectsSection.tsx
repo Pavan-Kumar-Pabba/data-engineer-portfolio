@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Github } from "lucide-react";
@@ -52,45 +53,41 @@ const ProjectsSection = () => {
     <section className="py-16 px-8 bg-accent/20" id="projects">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12 text-primary">Projects</h2>
-        <Carousel className="w-full max-w-5xl mx-auto">
-          <CarouselContent>
-            {projects.map((project, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                <Card className="h-full overflow-hidden hover:shadow-lg transition-shadow">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-48 object-cover hover:opacity-80 transition-opacity"
-                  />
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold mb-4">{project.title}</h3>
-                    <p className="text-gray-700 mb-4 line-clamp-4">{project.description}</p>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {project.technologies.map((tech, techIndex) => (
-                        <span
-                          key={techIndex}
-                          className="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                    <Button
-                      variant="outline"
-                      className="w-full"
-                      onClick={() => window.open(project.githubLink, "_blank")}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {projects.map((project, index) => (
+            <Card key={index} className="flex flex-col h-full">
+              <div className="relative h-48">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover hover:opacity-80 transition-opacity"
+                />
+              </div>
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="text-xl font-semibold mb-4">{project.title}</h3>
+                <p className="text-gray-700 mb-4 flex-grow">{project.description}</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.technologies.map((tech, techIndex) => (
+                    <span
+                      key={techIndex}
+                      className="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm"
                     >
-                      <Github className="w-4 h-4 mr-2" />
-                      View on GitHub
-                    </Button>
-                  </div>
-                </Card>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <Button
+                  variant="outline"
+                  className="w-full mt-auto"
+                  onClick={() => window.open(project.githubLink, "_blank")}
+                >
+                  <Github className="w-4 h-4 mr-2" />
+                  View on GitHub
+                </Button>
+              </div>
+            </Card>
+          ))}
+        </div>
       </div>
     </section>
   );
