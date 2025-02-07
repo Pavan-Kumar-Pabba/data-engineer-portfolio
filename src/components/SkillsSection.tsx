@@ -1,6 +1,7 @@
+
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
-import { Database, Cloud, Brain, ChartBar, Code2, GitBranch, Server, Network } from "lucide-react";
+import { Database, Cloud, Brain, ChartBar, Code2, Git, Server, Network } from "lucide-react";
 
 const skillCategories = [
   {
@@ -36,7 +37,7 @@ const skillCategories = [
   {
     title: "Tools and Frameworks",
     skills: "Informatica, Talend, Stitch, Jira, Jupyter Notebook, SSMS, SSIS, Alation, Big Data tools",
-    icon: GitBranch,
+    icon: Git,
     bgImage: "/lovable-uploads/503e9d73-b3e1-42b7-b20b-afb16b1c1f0b.png"
   },
   {
