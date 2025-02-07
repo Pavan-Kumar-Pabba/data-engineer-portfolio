@@ -50,29 +50,42 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section className="py-16 px-8 bg-accent/20" id="projects">
+    <section className="py-16 px-8 bg-gradient-to-b from-accent/20 to-background" id="projects">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12 text-primary">Projects</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-primary relative">
+          <span className="inline-block animate-fade-in">Projects</span>
+          <div className="absolute -z-10 w-full h-1 bg-gradient-to-r from-transparent via-primary/20 to-transparent bottom-0"></div>
+        </h2>
         <Carousel className="w-full">
           <CarouselContent>
             {projects.map((project, index) => (
-              <CarouselItem key={index} className="basis-full md:basis-1/2 lg:basis-1/3">
-                <Card className="flex flex-col h-full mx-2">
-                  <div className="relative h-48">
+              <CarouselItem 
+                key={index} 
+                className="basis-full md:basis-1/2 lg:basis-1/3 transition-transform duration-300 ease-in-out"
+              >
+                <Card className="flex flex-col h-full mx-2 group hover:shadow-xl transition-all duration-300 bg-card/50 backdrop-blur-sm border-accent/50 hover:border-primary/50">
+                  <div className="relative h-48 overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover hover:opacity-80 transition-opacity"
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                   </div>
-                  <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="text-xl font-semibold mb-4">{project.title}</h3>
-                    <p className="text-gray-700 mb-4 flex-grow">{project.description}</p>
+                  <div className="p-6 flex flex-col flex-grow relative">
+                    <div className="absolute inset-0 bg-gradient-to-b from-accent/5 to-background/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <h3 className="text-xl font-semibold mb-4 text-primary group-hover:text-primary/80 transition-colors">
+                      {project.title}
+                    </h3>
+                    <p className="text-gray-700 mb-4 flex-grow line-clamp-4 group-hover:line-clamp-none transition-all duration-300">
+                      {project.description}
+                    </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       {project.technologies.map((tech, techIndex) => (
                         <span
                           key={techIndex}
-                          className="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm"
+                          className="bg-accent/80 text-accent-foreground px-3 py-1 rounded-full text-sm backdrop-blur-sm 
+                                   hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
                         >
                           {tech}
                         </span>
@@ -80,10 +93,11 @@ const ProjectsSection = () => {
                     </div>
                     <Button
                       variant="outline"
-                      className="w-full mt-auto"
+                      className="w-full mt-auto group/button hover:bg-primary hover:text-primary-foreground 
+                               transition-all duration-300 ease-in-out transform hover:-translate-y-1"
                       onClick={() => window.open(project.githubLink, "_blank")}
                     >
-                      <Github className="w-4 h-4 mr-2" />
+                      <Github className="w-4 h-4 mr-2 transition-transform group-hover/button:rotate-12" />
                       View on GitHub
                     </Button>
                   </div>
@@ -91,8 +105,8 @@ const ProjectsSection = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="hidden md:flex" />
-          <CarouselNext className="hidden md:flex" />
+          <CarouselPrevious className="hidden md:flex -left-12 hover:bg-primary hover:text-primary-foreground transition-colors" />
+          <CarouselNext className="hidden md:flex -right-12 hover:bg-primary hover:text-primary-foreground transition-colors" />
         </Carousel>
       </div>
     </section>
