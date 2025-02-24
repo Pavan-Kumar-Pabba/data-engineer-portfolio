@@ -17,31 +17,31 @@ const AboutSection = () => {
             Data Alchemist: Transforming Raw Information into Strategic Gold
           </div>
           <p className="text-gray-700 leading-relaxed">
-            I'm Pavan Kumar Pabba, a Data Engineer and Graduate Student in Artificial Intelligence and Business Analytics at the University of South Florida who decodes complexity and delivers clarity, turning raw data into actionable insights and scalable AI-driven solutions.
+            I'm Pavan Kumar Pabba, a seasoned Data Analyst and Graduate Student in Artificial Intelligence and Business Analytics at the University of South Florida. With 5 years of expertise in Business Intelligence and Data Analytics, I specialize in transforming complex data into actionable insights that drive strategic decision-making.
           </p>
           
           <p className="text-gray-700 leading-relaxed">
-            Fueled by a deep curiosity for data-driven decision-making and the potential of AI to revolutionize industries, I specialize in designing scalable ETL pipelines, creating Interactive Business Intelligence reports, optimizing data warehouses, and deploying AI solutions that drive business intelligence forward. With 5 years of experience in Data Analysis, data engineering, machine learning, and cloud architecture, I have built and optimized systems that power real-time analytics, automation, and AI-driven applications.
+            As a data visualization expert, I excel in creating impactful dashboards using Tableau and Power BI, having developed over 40+ interactive reports that increased user adoption by 25%. My expertise spans advanced SQL, Python, and business intelligence tools, enabling me to deliver data-driven solutions that enhance business performance and operational efficiency.
           </p>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-semibold text-primary">Key Milestones:</h3>
+            <h3 className="text-xl font-semibold text-primary">Key Expertise:</h3>
             <div className="space-y-4">
               <div>
-                <h4 className="font-semibold text-secondary">✅ Data Analytics:</h4>
-                <p className="text-gray-700">Architected and optimized 40+ interactive BI dashboards for supply chain, finance, and marketing, driving a 25% increase in Tableau, Quicksight, and Power BI user adoption. Led the analysis and BI reporting initiatives at Motorola Solutions Mergers & Acquisitions, improving business outcomes by 36%.</p>
+                <h4 className="font-semibold text-secondary">✅ Advanced Analytics & BI:</h4>
+                <p className="text-gray-700">Expert in Tableau, Power BI, and SQL, delivering 40+ interactive dashboards that increased user adoption by 25%. Led complex data analysis projects at Motorola Solutions M&A, improving business outcomes by 36% through data-driven insights.</p>
               </div>
               <div>
-                <h4 className="font-semibold text-secondary">✅ Data Engineering at Scale:</h4>
-                <p className="text-gray-700">Orchestrated a full-scale EDH DevOps implementation, reducing time-to-market by 52.03% and generating $210K in annual savings, demonstrating expertise in process optimization and automation.</p>
+                <h4 className="font-semibold text-secondary">✅ Data Visualization Excellence:</h4>
+                <p className="text-gray-700">Mastery in creating compelling visualizations and KPI dashboards, optimizing report performance by 49.76% through advanced techniques in Tableau and Power BI. Specialized in LOD expressions and complex dashboard design.</p>
               </div>
               <div>
-                <h4 className="font-semibold text-secondary">✅ AI & Machine Learning:</h4>
-                <p className="text-gray-700">Built an AI-powered chatbot using LLMs and Generative AI, improving query reliability by 87.83%. Developed and fine-tuned over 6 ML models utilizing Pandas, NumPy, Keras, OpenCV, PyTorch, and NLP, improving predictive accuracy by 14.36%.</p>
+                <h4 className="font-semibold text-secondary">✅ Business Intelligence:</h4>
+                <p className="text-gray-700">Demonstrated success in transforming raw data into actionable insights, leading to 42.3% improvement in data-driven decision-making efficiency. Expert in ETL processes and data warehouse optimization.</p>
               </div>
               <div>
-                <h4 className="font-semibold text-secondary">✅ Data Engineer - Cloud & Automation:</h4>
-                <p className="text-gray-700">Engineered big data architectures on AWS, leveraging Airflow, Terraform, Spark, and EMR, improving processing efficiency by 33%. Automated ETL pipelines using Python, PostgreSQL, Kinesis, and AWS Glue, optimizing Redshift queries by 54.71% and saving $186K annually.</p>
+                <h4 className="font-semibold text-secondary">✅ Advanced Tools & Technologies:</h4>
+                <p className="text-gray-700">Proficient in Python, SQL, Tableau, Power BI, and AWS tools. Successfully implemented automated reporting solutions and AI-powered analytics, improving query performance by 54.71%.</p>
               </div>
             </div>
           </div>
