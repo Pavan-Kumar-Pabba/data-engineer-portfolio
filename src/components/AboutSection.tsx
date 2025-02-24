@@ -1,3 +1,4 @@
+
 import { GraduationCap, Mail, Phone, Download } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
@@ -12,13 +13,38 @@ const AboutSection = () => {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
           <h2 className="text-3xl font-bold text-primary">About Me</h2>
+          <div className="text-xl font-semibold text-secondary mb-4">
+            Data Alchemist: Transforming Raw Information into Strategic Gold
+          </div>
           <p className="text-gray-700 leading-relaxed">
-            As a Data Engineer with expertise in Data Science and AI, I specialize in designing and implementing scalable data solutions. My experience spans across big data processing, cloud architecture, and machine learning implementations. I excel in building robust ETL pipelines, optimizing data workflows, and creating actionable insights through advanced analytics.
+            I'm Pavan Kumar Pabba, a Data Engineer and Graduate Student in Artificial Intelligence and Business Analytics at the University of South Florida who decodes complexity and delivers clarity, turning raw data into actionable insights and scalable AI-driven solutions.
           </p>
           
           <p className="text-gray-700 leading-relaxed">
-            Key competencies include data pipeline development, cloud infrastructure management (AWS, Azure, GCP), big data technologies (Hadoop, Spark), and machine learning model deployment. I have successfully led projects in real-time data processing, predictive analytics, and data warehouse optimization, consistently delivering performance improvements and cost savings.
+            Fueled by a deep curiosity for data-driven decision-making and the potential of AI to revolutionize industries, I specialize in designing scalable ETL pipelines, creating Interactive Business Intelligence reports, optimizing data warehouses, and deploying AI solutions that drive business intelligence forward. With 5 years of experience in Data Analysis, data engineering, machine learning, and cloud architecture, I have built and optimized systems that power real-time analytics, automation, and AI-driven applications.
           </p>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-semibold text-primary">Key Milestones:</h3>
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-semibold text-secondary">✅ Data Analytics:</h4>
+                <p className="text-gray-700">Architected and optimized 40+ interactive BI dashboards for supply chain, finance, and marketing, driving a 25% increase in Tableau, Quicksight, and Power BI user adoption. Led the analysis and BI reporting initiatives at Motorola Solutions Mergers & Acquisitions, improving business outcomes by 36%.</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-secondary">✅ Data Engineering at Scale:</h4>
+                <p className="text-gray-700">Orchestrated a full-scale EDH DevOps implementation, reducing time-to-market by 52.03% and generating $210K in annual savings, demonstrating expertise in process optimization and automation.</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-secondary">✅ AI & Machine Learning:</h4>
+                <p className="text-gray-700">Built an AI-powered chatbot using LLMs and Generative AI, improving query reliability by 87.83%. Developed and fine-tuned over 6 ML models utilizing Pandas, NumPy, Keras, OpenCV, PyTorch, and NLP, improving predictive accuracy by 14.36%.</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-secondary">✅ Data Engineer - Cloud & Automation:</h4>
+                <p className="text-gray-700">Engineered big data architectures on AWS, leveraging Airflow, Terraform, Spark, and EMR, improving processing efficiency by 33%. Automated ETL pipelines using Python, PostgreSQL, Kinesis, and AWS Glue, optimizing Redshift queries by 54.71% and saving $186K annually.</p>
+              </div>
+            </div>
+          </div>
 
           <div className="space-y-4">
             <h3 className="text-xl font-semibold text-primary flex items-center gap-2">

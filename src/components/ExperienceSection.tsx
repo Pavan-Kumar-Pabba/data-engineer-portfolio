@@ -3,25 +3,32 @@ import { Card } from "@/components/ui/card";
 
 const experiences = [
   {
-    title: "Data Science Teaching Assistant",
+    title: "Data Analyst",
     company: "University of South Florida",
-    location: "Tampa, United States",
-    period: "Aug 2024 - Present",
-    description: "Leading data science instruction for 350+ students, focusing on preprocessing, model evaluation, and statistical analysis. Developed a RAG-based AI chatbot using LLMs and Azure OpenAI, achieving 87.83% query reliability improvement. Enhanced student performance in statistical techniques, resulting in 31% grade improvement.",
+    location: "Tampa, Florida",
+    period: "Jan 2024 - Present",
+    description: "Led a team of 4 to develop descriptive analytics solutions for E-insights using Python libraries, SQL, Tableau, and Power BI with DAX enhancing the decision-making efficiency by 35%. Improved data integrity for Tableau and Power BI dashboards by resolving issues and collaborating with SMEs and business leaders, boosting data-driven insights efficiency by 42.3%. Created an RAG-based AI chatbot applying LLMs, and Gen AI, increasing user engagement among 250+ Students.",
   },
   {
     title: "Data Analytics Engineer",
     company: "Tata Consultancy Services",
     location: "Hyderabad, India",
     period: "Jul 2021 - Aug 2023",
-    description: "Architected big data solutions on AWS using Airflow, Terraform, and Spark, improving processing efficiency by 33%. Developed automated ETL pipelines processing 1M+ daily records, optimizing performance by 54.71%. Implemented real-time log processing using Amazon Kinesis and designed actionable dashboards with Tableau and Power BI, enhancing reporting efficiency by 36%.",
+    description: "Orchestrated the migration and decommission of legacy data warehouses to AWS, leveraging ETL/ELT tools and enhancing OLAP performance by 36%, resulting in annual cost savings of $210,000. Automated ETL processes processing 1M+ daily records into Redshift, optimizing query performance by 54.71%. Deployed Big Data Architecture on EDH in AWS, building scalable data pipelines from 50+ systems, enhancing analytics efficiency by 40%. Consolidated legacy reporting applications into Tableau, reducing BI costs by 35%. Architected 40+ interactive BI dashboards, increasing user adoption by 25%. Led BI reporting initiatives at Motorola Solutions M&A, improving outcomes by 36%.",
+  },
+  {
+    title: "Data Analyst",
+    company: "CENTER FOR ADVANCED DEVELOPMENT, GITAM",
+    location: "Vizag, India",
+    period: "Oct 2020 - May 2021",
+    description: "Built SQL Queries and Optimized Payroll analytics view performance by implementing LOD expressions, Table Calculations, data extracts, parameterized filters, and indexing, reducing load time by 49.76%. Formulated Tableau Prep and automated data refresh schedules in Tableau Server, ensuring 100% real-time report availability.",
   },
   {
     title: "Machine Learning Intern",
-    company: "Internshala Trainings",
-    location: "Visakhapatnam, India",
-    period: "Apr 2020 - Sep 2020",
-    description: "Developed ML models for Churn Prediction and Fraud Detection, achieving 15% higher precision. Implemented advanced statistical analysis and machine learning techniques, enhancing model reliability by 21%. Created and optimized ML models using Pandas, NumPy, Keras, and PyTorch, improving predictive accuracy by 14.36%.",
+    company: "INTERNSHALA",
+    location: "Remote, India",
+    period: "Apr 2020 - Aug 2020",
+    description: "Developed and fine-tuned over 6 ML models utilizing Pandas, Numpy, PyTorch, TensorFlow, NLP, Scikit-learn, and Open CV, improving predictive accuracy by 14.36% in image recognition and text classification. Executed statistical analysis and machine learning techniques, including regression, clustering, and deep learning, to enhance predictive modeling reliability by 21%.",
   },
 ];
 
