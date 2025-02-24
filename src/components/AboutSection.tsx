@@ -25,23 +25,21 @@ const AboutSection = () => {
           </p>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-semibold text-primary">Key Expertise:</h3>
+            <h3 className="text-xl font-semibold text-primary">Core Skills:</h3>
             <div className="space-y-4">
               <div>
-                <h4 className="font-semibold text-secondary">✅ Advanced Analytics & BI:</h4>
-                <p className="text-gray-700">Expert in Tableau, Power BI, and SQL, delivering 40+ interactive dashboards that increased user adoption by 25%. Led complex data analysis projects at Motorola Solutions M&A, improving business outcomes by 36% through data-driven insights.</p>
+                <h4 className="font-semibold text-secondary">Data Engineering Expertise:</h4>
+                <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                  <li>Architected and optimized ETL/ELT pipelines using AWS services (Redshift, Glue, S3), improving processing efficiency by 54.71%</li>
+                  <li>Implemented automated data pipelines handling 1M+ daily records, resulting in $186K annual cost savings</li>
+                </ul>
               </div>
               <div>
-                <h4 className="font-semibold text-secondary">✅ Data Visualization Excellence:</h4>
-                <p className="text-gray-700">Mastery in creating compelling visualizations and KPI dashboards, optimizing report performance by 49.76% through advanced techniques in Tableau and Power BI. Specialized in LOD expressions and complex dashboard design.</p>
-              </div>
-              <div>
-                <h4 className="font-semibold text-secondary">✅ Business Intelligence:</h4>
-                <p className="text-gray-700">Demonstrated success in transforming raw data into actionable insights, leading to 42.3% improvement in data-driven decision-making efficiency. Expert in ETL processes and data warehouse optimization.</p>
-              </div>
-              <div>
-                <h4 className="font-semibold text-secondary">✅ Advanced Tools & Technologies:</h4>
-                <p className="text-gray-700">Proficient in Python, SQL, Tableau, Power BI, and AWS tools. Successfully implemented automated reporting solutions and AI-powered analytics, improving query performance by 54.71%.</p>
+                <h4 className="font-semibold text-secondary">Data Analysis & Visualization:</h4>
+                <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                  <li>Created 40+ interactive Tableau & Power BI dashboards, driving 25% increase in user adoption across departments</li>
+                  <li>Led complex data analysis initiatives at Motorola Solutions M&A, improving business outcomes by 36% through data-driven insights</li>
+                </ul>
               </div>
             </div>
           </div>
